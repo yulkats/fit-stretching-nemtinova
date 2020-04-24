@@ -1,0 +1,55 @@
+body {
+    max-width: 980px;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+header .navbar-brand {
+    font-size: 1.5rem;
+}
+
+header .header-menu{
+    display: block;
+    font-size: 1rem;
+    text-align: center;
+}
+.carousel,  
+.about-me {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.carousel-item img {
+    margin: auto;
+    max-height: 500px;
+    max-width: 600px;
+}
+.about-me {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+}
+
+.about-me p {
+    padding: 20px;
+    text-align: justify;
+}
+
+.about-me img {
+    max-height: 500px;
+    max-width: 700px;
+}
+
+@media (min-width: 600px) {
+    .about-me {
+    display: grid;
+    grid-template: 15% 1fr/ 1fr 1fr;
+    justify-items: center;
+}
+
+.about-me p {
+    align-self: flex-start;
+}
+.about-me img {
+    grid-area: 1/2/3/3;
+}
+}
