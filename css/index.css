@@ -13,15 +13,18 @@ header .header-menu{
     font-size: 1rem;
     text-align: center;
 }
+
 .carousel,  
 .about-me {
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
+
 .carousel-item img {
     margin: auto;
     max-height: 500px;
     max-width: 600px;
 }
+
 .about-me {
     align-items: center;
     display: flex;
@@ -36,7 +39,7 @@ header .header-menu{
 
 .about-me img {
     max-height: 500px;
-    max-width: 700px;
+    max-width: 100%;
 }
 
 @media (min-width: 600px) {
@@ -49,7 +52,59 @@ header .header-menu{
 .about-me p {
     align-self: flex-start;
 }
+
 .about-me img {
     grid-area: 1/2/3/3;
+}
+}
+
+.baner {
+ position: relative;
+}
+
+.video-baner {
+  width: 100%; 
+  height: 100%;
+}
+
+.baner-content {
+    text-align: center;
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 10px;
+  font-size: .8rem;
+}
+
+.video-btn {
+  width: 200px;
+  font-size: .8rem;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* .video-btn:hover {
+  background: #ddd;
+  color: black;
+} */
+
+@media (min-width: 600px) {
+    .baner-content {
+        padding: 20px;
+        font-size: 1.2rem;
+    }
+
+    .video-btn {
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
 }
 }
