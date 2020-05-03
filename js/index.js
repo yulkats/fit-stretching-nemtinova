@@ -3,14 +3,8 @@ const video = document
   
 const btn = document
   .querySelector(".video-btn")
-  .addEventListener("click", myFunction);
+  .addEventListener("click", playerControl);
 
-function myFunction() {
-  if (video.paused) {
-    video.play();
-    btn.innerHTML = "Pause";
-  } else {
-    video.pause();
-    btn.innerHTML = "Play";
-  }
+function playerControl() {
+  video.paused ?  video.play() : video.pause();
 }
