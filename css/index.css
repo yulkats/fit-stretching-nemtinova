@@ -18,7 +18,7 @@ header .header-menu{
 }
 
 .carousel,  
-.about-me {
+#about-me {
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -28,16 +28,68 @@ header .header-menu{
     max-width: 600px;
 }
 
+.about-me-title{
+    text-align: center;
+    padding: 30px 20px 10px;
+}
+
 .about-me {
     align-items: center;
     display: flex;
     flex-direction: column;
-    padding: 40px 20px;
+    padding: 10px 20px  40px;
+}
+
+.about-me-box {
+    height: 80px;
+    width: 80px;
+    /* border: 1px solid rgba(0, 0, 0, 0.5); */
+    background-color: rgba(0, 0, 0, 0.1);
+    position: relative;
+    /* margin-left: -50px; */
+    /* left: 10%; */
+    padding-left: -40px;
+    
+}
+
+.about-me h3 {
+    font-size: 1.2rem;
+    padding: 20px;
+    /* border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.1); */
+    margin: 0 5px 15px;
+    text-align: center;
+    /* position: absolute; */
+    /* width:0px; */
+}
+
+.about-me-text {
+    display: grid;
+    display: flex;
+    flex-direction: column;
+    /* justify-content:space-around; */
+    text-align: center;
+    padding: 15px;
+    font-size: 1rem;
+}
+
+.about-me ul {
+    margin: 10px 0 15px;
+}
+
+.about-me li {
+    padding: 10px 0;
 }
 
 .about-me p {
-    padding: 20px;
-    text-align: justify;
+    padding: 0 15px;
+    text-align: left;
+} 
+
+.about-me .about-me-space {
+    text-align: center;
+    text-decoration: underline;
+    padding: 10px;
 }
 
 .about-me img {
@@ -48,12 +100,9 @@ header .header-menu{
 @media (min-width: 600px) {
     .about-me {
     display: grid;
-    grid-template: 15% 1fr/ 1fr 1fr;
+    grid-template: 10% 1fr/ 50% 50%;
     justify-items: center;
-}
-
-.about-me p {
-    align-self: flex-start;
+    align-items: start;
 }
 
 .about-me img {
@@ -129,12 +178,9 @@ color: var(--second-color);
     text-align: center;
     font-size: 1.1rem;
     background-color: rgba(0, 0, 0, 0.2);
-}
-
-.stretching-baner-text-marafon{
+    text-transform: uppercase;
     font-weight: bold;
-    font-size: 1.4rem;
-    display: block;
+    padding: 10px;
 }
 
 .stretching-baner-text:last-child {
@@ -306,4 +352,29 @@ height: 40px;
 .marafon-text {
     display: inline;
 }
+}
+
+/* Footer */
+footer{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding-top: 30px;
+}
+footer .contacts{
+    display: flex;
+    justify-content: center;
+}
+footer img{
+    height: 30px;
+    width: 30px;
+}
+footer a{
+    padding: 0 20px;
+}
+footer h4{
+    text-align: center;
+    padding-bottom: 15px;
+}
+footer p{
+    padding-top: 15px;
+    text-align: center;
 }
