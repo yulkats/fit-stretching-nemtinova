@@ -143,6 +143,34 @@
 </div>
 <img src="img/stretching.jpeg" alt="Девушка в шпагате">
 </section>
+<!-- Forma -->
+                <section class="contact-container">
+                    <div class="review-form-container">
+                        <h2 class="list-header">Хочу записаться</h2>
+                        <form action="https://formspree.io/mqkloedp" method="POST" class="review-form">
+                            <div class="form-control">
+                            <input type="text" name="user_name" placeholder="Имя*" class="user-name">
+                            <small>Error message</small>
+                            </div>
+                            <div class="form-control">
+                            <input type="email" name="user_email" placeholder="Email" class="user-email">
+                            <small>Error message</small>
+                            </div>
+                            <div class="form-control">
+                            <input type="tel" name="user_tel" class="user-phone" placeholder="Телефон*">
+                            <small>Error message</small>
+                            </div>
+                            <div class="form-control">
+                            <input type="number" name="user_mark" class="user-marks" placeholder="Marks" max="5" min="1">
+                            <small>Error message</small>
+                            </div>
+                            <textarea name="message" rows="4" cols="30" placeholder="Задать вопрос"></textarea>
+                            <button type="submit" value="Send" class="btn">Отправить</button>
+                            <input type="reset" value="Очистить" class="btn">
+                            <p>* Обязательные поля</p>
+                        </form>
+                    </div>
+                    </section>
 </main>
 <footer>
   <h4>Контакти:</h4>
@@ -160,6 +188,7 @@
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script defer src="js/form-validator.js"></script>
 <script src="js/index.js"></script>
 </body>
 </html>
