@@ -135,6 +135,11 @@ header .header-menu{
   font-size: .8rem;
 }
 
+.baner-content p {
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
 .video-btn {
   width: 200px;
   font-size: .8rem;
@@ -143,6 +148,7 @@ header .header-menu{
   background: #000;
   color: #fff;
   cursor: pointer;
+  text-transform: uppercase;
 }
 
 @media (min-width: 600px) {
@@ -376,7 +382,7 @@ height: 40px;
 .stretching-price .stretching-price-background h2 {
     position: absolute;
     top: 45%; 
-    left: 10%;
+    left: 15%;
     color: var(--second-color);
     font-size: 2rem;
     background-color: rgba(0, 0, 0, 0.2);
@@ -544,6 +550,36 @@ textarea {
   .review-form input {
     width: 100%;
   }
+}
+
+/* Reviws */
+.reviews {
+    text-align: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 30px 0;
+}
+
+.reviews h2 {
+    padding-bottom: 20px;
+}
+
+.reviews-img{
+    display: grid;
+    /* justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center; */
+    justify-items: center;
+}
+
+.reviews-img img{
+    height: 300px;
+}
+
+@media (min-width: 775px) {
+.reviews-img{
+    grid-template-columns: 1fr 1fr;
+}
 }
 
 /* Footer */

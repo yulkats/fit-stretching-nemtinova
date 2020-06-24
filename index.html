@@ -19,18 +19,24 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#about-me">
-                                Про тренера<span class="sr-only">(current)</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" href="#stretching">Stretching</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Fitness</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="#about-me">
+                                Про тренера<span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="#form">Записаться</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#review">Отзывы</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Контакты</a>
                         </li>
                     </ul>
                 </div>
@@ -38,36 +44,18 @@
             <section class="baner">
                 <video autoplay muted loop playsinline webkit-playinginline preload="auto" class="video-baner">
                     <source src="video/n (1).mp4" type="video/mp4">
-                    <source src="video/n-_1_.webm" onerror="fallback(parentNode)">Your browser does not support HTML5 video.
+                    <source src="video/n-_1_.webm" onerror="fallback(parentNode)">Твой браузер не поддержывает формат.
 
                 </video>
                 <div class="baner-content">
-                    <h3>Присоединяйся</h3>
-                    <p>Жду на тренеровках!</p>
-                    <button class="video-btn">Пауза</button>
+                    <!-- <h3>Обретите мир и гармонию сл своим телом</h3> -->
+                    <p>Обретите мир и гармонию со своим телом </p>
+                    <button class="video-btn">вмести со мной</button>
                 </div>
             </section>
         </header>
         <main>
-            <section id='about-me' class="container">
-                <h2 class="about-me-title">Про тренера</h2>
-                <div class="about-me">
-                    <div class="about-me-box">
-                        <h3>НЕМТИНОВА АНАСТАСИЯ</h3>
-                    </div>
-                    <div class="about-me-text">
-                        <ul>
-                            <li>Cертифицированный тренер в направлении  Фитнес / Stretching.</li>
-                            <li>Кандидат мастера спорта по художественной гимнастики.</li>
-                        </ul>
-                        <p class="about-me-space">Образование:</p>
-                        <p>Университет им. Ю.Федьковича</p>
-                        <p>Физическая культура  и здоровье человека.</p>
-                        <p class="about-me-space">Опыт работы : 7 лет.</p>
-                    </div>
-                    <img src="img/about-me.jpeg" src="Немтинова Анастасия">
-                </div>
-            </section>
+          
             <section class="stretching container" id="stretching">
                 <h2 class="stretching-header">Stretching</h2>
                 <div class="stretching-baner">
@@ -168,7 +156,27 @@
                             </div>
                         </div>
                     </div>
-                    <small>До конца акции</small>
+                    <!-- <p>До конца акции</p> -->
+                    <a href="#form" class="btn btn-whant">Хочу записаться</a>
+                </div>
+            </section>
+            <section id='about-me' class="container">
+                <h2 class="about-me-title">Про тренера</h2>
+                <div class="about-me">
+                    <div class="about-me-box">
+                        <h3>НЕМТИНОВА АНАСТАСИЯ</h3>
+                    </div>
+                    <div class="about-me-text">
+                        <ul>
+                            <li>Cертифицированный тренер в направлении  Фитнес / Stretching.</li>
+                            <li>Кандидат мастера спорта по художественной гимнастики.</li>
+                        </ul>
+                        <p class="about-me-space">Образование:</p>
+                        <p>Университет им. Ю.Федьковича</p>
+                        <p>Физическая культура  и здоровье человека.</p>
+                        <p class="about-me-space">Опыт работы : 7 лет.</p>
+                    </div>
+                    <img src="img/about-me.jpeg" src="Немтинова Анастасия">
                 </div>
             </section>
             <!-- Forma -->
@@ -200,9 +208,17 @@
                 </div>
             </section>
             <!-- Feedback -->
-            <section class="feedback"></section>
+            <section class="reviews container" id="review">
+              <h2>Отзывы довольных клиентов:</h2>
+              <div class="reviews-img">
+                <img src="img/reviews/review-3.jpg" alt="Отзыв довольного клиента">
+                <img src="img/reviews/review-2.jpg" alt="Отзыв довольного клиента">
+                <img src="img/reviews/review-1.jpg" alt="Отзыв довольного клиента">
+                <img src="img/reviews/review-4.jpg" alt="Отзыв довольного клиента">
+              </div>
+            </section>
         </main>
-        <footer class="container">
+        <footer class="container" id="contact">
             <h4>Контакти:</h4>
             <div class="contacts">
                 <a href="tel:+380958006380">
