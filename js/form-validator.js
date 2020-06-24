@@ -2,7 +2,7 @@ const form = document.querySelector(".review-form");
 const userName = document.querySelector(".user-name");
 const email = document.querySelector(".user-email");
 const userPhone = document.querySelector(".user-phone");
-const userMarks = document.querySelector(".user-marks");
+const userLastName = document.querySelector(".user-last-name");
 
 // Show input error message
 function showError(input, message) {
@@ -30,7 +30,7 @@ function checkEmail(input) {
 
 // Check phone is valid
 function checkPhone(input) {
-  const re = /[0-9]{9}/;
+  const re = /[0-9]{10}/;
   if (re.test(input.value.trim())) {
     showSuccess(input);
   } else {
@@ -59,7 +59,7 @@ function checkLength(input, min, max) {
   } else if (input.value.length > max) {
     showError(
       input,
-      `${getFieldName(input)} Должгно быть максимум ${max} буквы`
+      `${getFieldName(input)} Должгно быть максимум ${max} букв`
     );
   } else {
     showSuccess(input);
@@ -75,8 +75,9 @@ function getFieldName(input) {
 form.addEventListener("submit", function (e) {
   e.preventDefault();
 
-  checkRequired([userName, email, userPhone, userMarks]);
+  checkRequired([userName, userPhone]);
   checkLength(userName, 3, 15);
-  checkEmail(email);
+  // checkLength(userLastName, 3, 15);
+  // checkEmail(email);
   checkPhone(userPhone);
 });

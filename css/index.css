@@ -1,11 +1,16 @@
-body {
-    max-width: 980px;
-    margin: auto; 
+body {  
     box-sizing: border-box;
     /* --main-color: #f0f1f4; */
     --second-color: #f0f1f4;
+    scroll-behavior: smooth;
 }
 
+.container {
+    max-width: 980px;
+    margin: auto; 
+    padding-right: 0;
+    padding-left: 0;
+}
 
 header .navbar-brand {
     font-size: 1.5rem;
@@ -252,7 +257,7 @@ height: 40px;
     display: grid;
     grid-template-columns: 40% 1fr;
     justify-items: center;
-    margin-bottom: 20px;
+    margin: 25px 0;
 }
 
 .stretching-reasons img {
@@ -291,19 +296,20 @@ height: 40px;
 }
 }
 
-/* Stretching-price */
-.stretching-price {
+/* what-do-you-get */
+.what-do-you-get {
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     padding: 40px 20px;
     text-align: center;
+    border-bottom: 1px solid var(--main-color);
 }
 
-.stretching-price-content {
+.what-do-you-get-content {
     text-align: center;
     padding: 20px 10px;
 }
 
-.stretching-price img {
+.what-do-you-get img {
     min-height: 400px;
     width: 100%;
 }
@@ -340,7 +346,7 @@ height: 40px;
 }
 
 @media (min-width: 600px) {
-    .stretching-price {
+    .what-do-you-get {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
@@ -354,6 +360,98 @@ height: 40px;
 }
 }
 
+/* Stretching Price*/
+
+.stretching-price .stretching-price-background {
+    background-image: url(../img/stretching-price.jpg); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    background-attachment: fixed;
+    position:relative;
+    background-position: center center;
+    margin: 20px 0;
+}
+
+.stretching-price .stretching-price-background h2 {
+    position: absolute;
+    top: 45%; 
+    left: 10%;
+    color: var(--second-color);
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 10px;
+}
+
+@media (min-width: 775px) {
+.stretching-price .stretching-price-background {
+    height: 600px;
+    background-position: 0 0;
+}
+
+.stretching-price .stretching-price-background h2 {
+    left: 35%;
+    font-size: 3rem;
+}
+}
+
+.stretching-price-content {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 30px 20px 20px;
+    text-align: center;
+}
+
+.stretching-price-content .price-higth {
+    text-decoration: line-through;
+}
+
+.stretching-price-content .price {
+    color: rgb(224, 30, 30);
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.stretching-price-content h3,
+.stretching-price-content h3+p {
+    color:  rgb(224, 30, 30);
+    font-size: 1.5rem;
+}
+
+
+.countdown {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+}
+
+.time {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.time p {
+  padding: 0;
+  margin: 0;
+}
+
+.time p,
+.time h2 {
+  font-size: 1.2rem;
+}
+
+@media (min-width: 500px) {
+  .time {
+    padding: 20px;
+  }
+
+  .time p,
+  .time h2 {
+    font-size: 2rem;
+  }
+}
+
 /* Form */
 :root {
   --success-color: #2ecc71;
@@ -361,6 +459,7 @@ height: 40px;
 }
 
 .contact-container .list-header {
+    margin-top: 20px;
   padding: 20px;
 }
 
@@ -433,7 +532,7 @@ textarea {
 
 @media (min-width: 775px) {
   .review-form {
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 48% 48%;
   }
 
   textarea,
@@ -451,22 +550,35 @@ footer{
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     padding-top: 30px;
 }
+
 footer .contacts{
     display: flex;
     justify-content: center;
 }
+
 footer img{
     height: 30px;
     width: 30px;
 }
+
 footer a{
-    padding: 0 20px;
+    padding: 0 10px;
 }
+
 footer h4{
     text-align: center;
     padding-bottom: 15px;
 }
+
 footer p{
     padding-top: 15px;
     text-align: center;
 }
+
+@media (min-width: 775px) {
+  footer a{
+    padding: 0 20px;
+  }
+}
+
+
