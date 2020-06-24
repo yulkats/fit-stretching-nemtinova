@@ -8,3 +8,9 @@ const btn = document
 function playerControl() {
   video.paused ?  video.play() : video.pause();
 }
+
+window.addEventListener("load", onLoad);
+
+function onLoad() {
+  document.querySelector("html").classList.add("smooth");
+}
