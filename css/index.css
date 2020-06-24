@@ -302,20 +302,20 @@ height: 40px;
 }
 }
 
-/* what-do-you-get */
-.what-do-you-get {
+/* what-will-you-get */
+.what-will-you-get {
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     padding: 40px 20px;
     text-align: center;
     border-bottom: 1px solid var(--main-color);
 }
 
-.what-do-you-get-content {
+.what-will-you-get-content {
     text-align: center;
     padding: 20px 10px;
 }
 
-.what-do-you-get img {
+.what-will-you-get img {
     min-height: 400px;
     width: 100%;
 }
@@ -352,7 +352,7 @@ height: 40px;
 }
 
 @media (min-width: 600px) {
-    .what-do-you-get {
+    .what-will-you-get {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
@@ -423,7 +423,9 @@ height: 40px;
     color:  rgb(224, 30, 30);
     font-size: 1.5rem;
 }
-
+.stretching-price-content small{
+    margin-left: 40%;
+}
 
 .countdown {
   display: flex;
