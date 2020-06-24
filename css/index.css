@@ -367,7 +367,7 @@ height: 40px;
     background-size: cover;
     background-repeat: no-repeat;
     height: 500px;
-    background-attachment: fixed;
+    
     position:relative;
     background-position: center center;
     margin: 20px 0;
@@ -387,6 +387,7 @@ height: 40px;
 .stretching-price .stretching-price-background {
     height: 600px;
     background-position: 0 0;
+    background-attachment: fixed;
 }
 
 .stretching-price .stretching-price-background h2 {
@@ -507,7 +508,7 @@ textarea {
 .form-control input:focus {
   outline: 0;
   border-color: #777;
-  background-color: transparent;
+  background-color: black;
 }
 
 .form-control.success input {

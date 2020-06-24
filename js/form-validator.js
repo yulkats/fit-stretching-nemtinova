@@ -1,8 +1,16 @@
+// function initMap(){
+//     const option = {
+//       center: { lat: 49.822805, lng: 23.985527 },
+//       zoom: 15
+//     };
+//     const map = new google.maps.Map(document.getElementById('map'), option)
+// }
+
 const form = document.querySelector(".review-form");
 const userName = document.querySelector(".user-name");
 const email = document.querySelector(".user-email");
 const userPhone = document.querySelector(".user-phone");
-const userLastName = document.querySelector(".user-last-name");
+const userMarks = document.querySelector(".user-marks");
 
 // Show input error message
 function showError(input, message) {
@@ -24,17 +32,17 @@ function checkEmail(input) {
   if (re.test(input.value.trim())) {
     showSuccess(input);
   } else {
-    showError(input, "Email не коректный");
+    showError(input, "Email is not valid");
   }
 }
 
 // Check phone is valid
 function checkPhone(input) {
-  const re = /[0-9]{10}/;
+  const re = /[0-9]{9}/;
   if (re.test(input.value.trim())) {
     showSuccess(input);
   } else {
-    showError(input, "Телефон не коректный");
+    showError(input, "Phone is not valid");
   }
 }
 
@@ -54,12 +62,12 @@ function checkLength(input, min, max) {
   if (input.value.length < min) {
     showError(
       input,
-      `${getFieldName(input)} Должгно быть минимум ${min} буквы`
+      `${getFieldName(input)} Must be at least ${min} characters`
     );
   } else if (input.value.length > max) {
     showError(
       input,
-      `${getFieldName(input)} Должгно быть максимум ${max} букв`
+      `${getFieldName(input)} must be less than ${max} characters`
     );
   } else {
     showSuccess(input);
@@ -75,9 +83,8 @@ function getFieldName(input) {
 form.addEventListener("submit", function (e) {
   e.preventDefault();
 
-  checkRequired([userName, userPhone]);
+  checkRequired([userName, email, userPhone, userMarks]);
   checkLength(userName, 3, 15);
-  // checkLength(userLastName, 3, 15);
-  // checkEmail(email);
+  checkEmail(email);
   checkPhone(userPhone);
 });
