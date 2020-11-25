@@ -191,11 +191,11 @@
                             <small>Error message</small>
                         </div>
                         <div class="form-control">
-                            <input type="text" name="user_last_name" class="user-last-name" placeholder="Фамилия" pattern="[А-Яа-я]" title="Буквы русского алфавита">
+                            <input type="text" name="user_last_name" class="user-last-name" placeholder="Фамилия" pattern="[А-Яа-я]{2,}" title="Буквы русского алфавита">
                             <small>Error message</small>
                         </div>
                         <div class="form-control">
-                            <input type="tel" name="user_tel" class="user-phone" placeholder="Телефон*" required  pattern="[0-9]{10}" title="0503040500">
+                            <input type="tel" name="user_tel" class="user-phone" placeholder="Телефон*" required  pattern="[\+0-9]{10,}" title="0503040500">
                             <small>Error message</small>
                         </div>
                         <div class="form-control">
